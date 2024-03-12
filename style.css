@@ -1,0 +1,91 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.logo h2{
+    border: 1px solid white;
+    padding: 4px 16px;
+}
+button{
+    padding: 4px 8px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    margin: 0px 10px;
+}
+.navbar{
+    background-color: rgb(87, 218, 227);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+}
+ul{
+    display: flex;
+}
+ul li{
+    list-style: none;
+    margin: 0px 10px;
+    color: white;
+    font-weight: 500;
+
+}
+ul li a:hover{
+    background-color: rgb(60, 220, 124);
+    transition: 0.8s;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid white;
+    padding: 4px 16px; 
+    border-radius: 10px;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menubtn, .closebtn{
+    font-size: 26px;
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:850px) {
+    #menu{
+        display: none;
+        padding: 40px 0px;
+        position: absolute;
+        width: 100%;
+        top: 59px;
+        right: 0px;
+        background-color: rgb(26, 184, 233);
+        text-align: center;
+    }
+    ul {
+        flex-direction: column;
+    }
+    ul li{
+        margin: 20px 0px;
+        border: none;
+        padding: 0px;
+    }
+    .menubtn{
+        display: block;
+    }
+    
+}
